@@ -1,0 +1,137 @@
+body{
+    margin: 0px;
+}
+
+/*fond étoilé*/
+.accueil{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('fond_satin.png');
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    color: white;
+}
+p{
+color: white;
+padding: 0px;
+}
+
+h1{
+color: white;
+padding: 0px;
+margin: 0px;
+}
+
+/*soleils*/
+.sun1{
+    height: 15%;
+    position: absolute;
+    top: 60%;
+    left: 15%;
+}
+.sun2{
+    height: 20%;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+}
+
+/*bienvenue sure*/
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vw;
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}
+
+/*décollage & barre*/
+.boutton{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 59%;
+    left: 67%;
+}
+.line{
+    background-color: white;
+    height: 0.3%;
+    width: 25%;
+    position: absolute;
+    top: 60%;
+    left: 41%;
+}
+
+/*space Jobs*/
+.logo_titre{
+    width: 40%;
+    position: absolute;
+    top: 42%;
+    left: 30%;
+}
+
+/*menu lattéral*/
+.logo{
+    width: 60%;
+}
+.nav{
+    
+    margin: 0px;
+    padding-left: 5%;
+    padding-top: 30%;
+    color: white;
+}
+.menu{
+    margin: 0px;
+    list-style-type: none;
+    position: absolute;
+    right: 95%;
+    top: 0%;
+}
+
+
+/*animation flotement*/
+@-webkit-keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      -webkit-transform: translatey(0px);
+              transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      -webkit-transform: translatey(-20px);
+              transform: translatey(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      -webkit-transform: translatey(0px);
+              transform: translatey(0px);
+    }
+  }
+  
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      -webkit-transform: translatey(0px);
+              transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      -webkit-transform: translatey(-10px);
+              transform: translatey(-10px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      -webkit-transform: translatey(0px);
+              transform: translatey(0px);
+    }
+  }
+
+  .float{
+    animation: float 3s ease-in-out infinite;
+  }
